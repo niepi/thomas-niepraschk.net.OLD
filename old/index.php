@@ -75,8 +75,10 @@ $allowed_langs = array ('de', 'en');
 $lang = lang_getfrombrowser($allowed_langs, 'en', null, false);
 
 if($lang === 'de'){
+	// include './de.html';
 	header( 'Location: /de/' ) ;
 }else{
+	// include './en.html';	
 	header( 'Location: /en/' ) ;
 }
 ?>
